@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+</head>
+<body>
+  	<style>
+.title {
+  font-size:50px;
+  font-family:cursive;
+  color:black;
+  animation: colorchange 5s infinite;
+}
+.stories {
+  font-size:35px;
+  font-family:cursive;
+  color:black;
+}
+@keyframes colorchange{
+  0%{
+    color:red;
+  }
+  10%{
+    color:cyan;
+  }
+  20%{
+    color:lime;
+  }
+  30%{
+    color:yellow;
+  }
+40%{
+  color:purple
+}
+50%{
+  color:lime;
+}
+60%{
+  color:cyan;
+}
+70%{
+  color:purple;
+}
+80%{
+  color:yellow;
+}
+90%{
+  color:red;
+}
+100%{
+  color:lime;
+}
+}
+@keyframes fadein{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes fadeout{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.button {
+  border:5px solid transparent;
+  background:none;
+  transition: border 0.5s;
+  animation: name 0.5s;
+}
+.button:hover{
+  border-color:lime;
+}
+.storyname {
+  font-family:cursive;
+  font-size:15px;
+  color:black;
+}
+</style>
+<audio>
+  <source src="hover.wav" type="audio/wav">
+</audio>
+<div id="title" class="title" align="center">
+Chevy's Stories
+</div>
+<div id="stories" class="stories" align="center">
+  Stories:
+</div>
+<div align="center">
+<button id="tsopap" class="button" onclick="set('tsopap.html')">
+<img src="tsopap.png" height="90">
+<div id="story1" class="storyname" style="display:none;">pineapple and pineapple</div>
+</button>
+<button id="wtrandpin" class="button" onclick="set('waterandpineapple.html')">
+  <img src="waterandpineapple.png" height="90">
+  <div id="story2" class="storyname" style="display:none;">water and pineapple</div>
+  </button>
+  <button id="waw" class="button" onclick="set('waw.html')">
+    <img src="waw.png" height="90">
+    <div id="story3" class="storyname" style="display:none;">water and water</div>
+    </button>
+    <button id="pap2" class="button" onclick="set('pap2.html')">
+      <img src="pap2.png" height="90">
+      <div id="story4" class="storyname" style="display:none;">pineapple and pineapple <span style="color:red;">II</span></div>
+      </button>
+</div>
+<div id="enjoy" class="stories" align="center" style="position:relative; bottom:-50px;">
+  Enjoy my Stories!
+</div>
+<div id="morecoming" class="title" align="center" style="position:relative; bottom:-100px;">
+  More Coming Soon!
+</div>
+<div id="credit" class="stories" align="center" style="position:relative; bottom:-300px;">
+  Website made by: Chevy
+</div>
+<script>
+  var h2;
+  function redirect(h){
+    var a = document.createElement("a");
+    a.href = h;
+    a.click();
+  }
+  function set(ht){
+    h2 = ht;
+    redirect(h2);
+  }
+  const button1 = document.querySelector("#tsopap");
+  const story1 = document.querySelector("#story1");
+  const button2 = document.querySelector("#wtrandpin");
+  const story2 = document.querySelector("#story2");
+  const button3 = document.querySelector("#waw");
+  const story3 = document.querySelector("#story3");
+  const button4 = document.querySelector("#pap2");
+  const story4 = document.querySelector("#story4");
+  const select = new Audio("hover.wav");
+  var hovering = false;
+  button1.addEventListener("mouseover", function(){
+    story1.style.display = "block";
+    if(hovering == false){
+      select.play();
+      hovering = true;
+    }
+    story1.style.animation = "fadein 1s forwards";
+  });
+  button1.addEventListener("mouseout", function(){
+    hovering = false;
+    story1.style.animation = "fadeout 1s forwards";
+    story1.style.display = "none";
+  });
+  button2.addEventListener("mouseover", function(){
+    story2.style.display = "block";
+    if(hovering == false){
+      select.play();
+      hovering = true;
+    }
+    story2.style.animation = "fadein 1s forwards";
+  });
+  button2.addEventListener("mouseout", function(){
+    hovering = false;
+    story2.style.animation = "fadeout 1s forwards";
+    story2.style.display = "none";
+  });
+  button3.addEventListener("mouseover", function(){
+    story3.style.display = "block";
+    if(hovering == false){
+      select.play();
+      hovering = true;
+    }
+    story3.style.animation = "fadein 1s forwards";
+  });
+  button3.addEventListener("mouseout", function(){
+    hovering = false;
+    story3.style.animation = "fadeout 1s forwards";
+    story3.style.display = "none";
+  });
+  button4.addEventListener("mouseover", function(){
+    story4.style.display = "block";
+    if(hovering == false){
+      select.play();
+      hovering = true;
+    }
+    story4.style.animation = "fadein 1s forwards";
+  });
+  button4.addEventListener("mouseout", function(){
+    hovering = false;
+    story4.style.animation = "fadeout 1s forwards";
+    story4.style.display = "none";
+  });
+</script>
+</body>
+</html>

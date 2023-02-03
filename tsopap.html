@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	
+</head>
+<body>
+  	<style>
+#thestory {
+  color:black;
+  font-size:30px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#pineapple {
+  color:yellow;
+  font-size:40px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#and {
+  color:black;
+  font-size:40px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#p {
+  color:black;
+  font-size:30px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#end {
+  color:black;
+  font-size:130px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+.back {
+  background-color:black;
+  border-radius:8px;
+  color:white;
+  font-family:cursive;
+  font-size:20px;
+  border-radius:8px;
+  width:70px;
+  text-align:center;
+  border: 5px solid transparent;
+  transition: border 0.5s;
+}
+.back:hover {
+  border-color:gray;
+}
+</style>
+<div>
+  <button id="back" class="back" onclick="set('main.html')">Back</button>
+</div>
+<div id="thestory">
+The story of...
+</div>
+<div id="pineapple" style="position:relative; top:-30px;" align="center">
+<img src="pineapple.png" height="50" style="position:relative; bottom:-10px; left:-10px;">pineapple <span id="and">and</span> pineapple <img src="pineapple.png" height="50" style="position:relative; bottom:-10px;">
+</div>
+<div id="p" style="position:relative; top:-50px;">
+Its a new morning, just the start of it. pineapple and pineapple are just chilling on the very nice kitchen table. suddenly the kitchen lights turned on. The person is back!! but he looks calm... weird.. the person took both pineapples. outside and the person sat on his chair and ate a whole pineapple in one bite. One of the foods got eaten for once! not explosion! Just kidding. The person woke up took both pineapples to his special lab and poured "EXPLODEY" on both. But They didnt explode! The "EXPLODEY" didnt work! But the person remembered he still had that one beaker. But there was nothing in it. but one of the pineapples looked over and one of the pineapples sacrificed themself. Pineapple was sad. While the person was looking somewhere else, the pineapple ran off the table and escaped to a different house. The person looked at the table and the pineapple was not there. The pineapple still has a necklace with pineapple so he can still remember him. The pineapple now lives freely. And the persons neighbor was watching the person and called the cops for food-napping, and the person is now arrested. Now every food and drink are free now.
+</div>
+<div id="end" style="position:relative; top:-50px;">
+THE END
+</div>
+<script>
+  var h2;
+  function redirect(h){
+    var a = document.createElement("a");
+    a.href = h;
+    a.click();
+  }
+  function set(ht){
+    h2 = ht;
+    redirect(h2);
+  }
+</script>
+</body>
+</html>

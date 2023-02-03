@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	
+</head>
+<body>
+  	<style>
+#text {
+  color:cyan;
+  font-size:40px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#text2 {
+  color:cyan;
+  font-size:40px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#and {
+  color:black;
+  font-size:40px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#p {
+  color:black;
+  font-size:30px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#thestory {
+  color:black;
+  font-size:30px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#end {
+  color:black;
+  font-size:130px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+.back {
+  background-color:black;
+  border-radius:8px;
+  color:white;
+  font-family:cursive;
+  font-size:20px;
+  border-radius:8px;
+  width:70px;
+  text-align:center;
+  border: 5px solid transparent;
+  transition: border 0.5s;
+}
+.back:hover {
+  border-color:gray;
+}
+</style>
+<div>
+  <button id="back" class="back" onclick="set('main.html')">Back</button>
+</div>
+<div id="thestory">
+The story of...
+</div>
+<div id="text" style="position:relative; top:-50px;">
+<img src="water.png" height="75" style="position:relative; bottom:-25px;">water<span id="and">and</span>water<img src="water.png" height="75" style="position:relative; bottom:-25px;">
+</div>
+<div id="p" style="position:relative; top:-50px;">
+water and water are sitting on the table where pineapple used to be. Both waters are wondering if they will be drank. Well a few seconds later, a person was walking up to the table. Both waters were happy to be drank but, they didnt. the person picked them up and used them in a science experiment. The person was testing something he made in his special lab. Both waters were confused why they were not getting drank. The person grabbed two beakers, for both waters. The person put one beaker back for some reason. One of the waters realized what the beaker said. It said: "EXPLODEY" which explodes stuff! The waters were terrified! Now they know why he put the other beaker away because, the explosion is so strong, the exlplosion will reach the other water! The waters said their last goodbyes. The person started pouring the beaker on water. a few seconds later, the water exploded. Since the explosion is so strong, the other water exploded.
+</div>
+<div id="end" align="center" style="position:relative; top:-50px;">
+THE END
+</div>
+<script>
+    var h2;
+  function redirect(h){
+    var a = document.createElement("a");
+    a.href = h;
+    a.click();
+  }
+  function set(ht){
+    h2 = ht;
+    redirect(h2);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	
+</head>
+<body>
+  	<style>
+#thestory {
+  color:black;
+  font-size:50px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#pineapple {
+  color:yellow;
+  font-size:40px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#and {
+  color:black;
+  font-size:40px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#II {
+  color:red;
+  font-size:45px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#p {
+  color:black;
+  font-size:30px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+#bigtext {
+  color:black;
+  font-size:40px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px
+}
+#end {
+  color:black;
+  font-size:100px;
+  font-family:cursive;
+  text-align:center;
+  padding:20px;
+}
+.back {
+  background-color:black;
+  border-radius:8px;
+  color:white;
+  font-family:cursive;
+  font-size:20px;
+  border-radius:8px;
+  width:70px;
+  text-align:center;
+  border: 5px solid transparent;
+  transition: border 0.5s;
+}
+.back:hover {
+  border-color:gray;
+}
+</style>
+<div>
+  <button id="back" class="back" onclick="set('main.html')">Back</button>
+</div>
+<div id="thestory" style="position:relative;">
+The story of...
+</div>
+<div id="pineapple" style="position:relative; top:-40px;">
+<img src="pineapple.png" height="50" style="position:relative; left:-20px; bottom:-10px;">pineapple <span id="and">and</span> pineapple<img src="pineapple.png" height="50" style="position:relative; right:-20px; bottom:-10px;"> <span id="II">II</span>
+</div>
+<div id="p" style="position:relative; top:-50px;">
+Its been a week, since pineapple escaped. The other pineapple is flying high after sacrificing himself. Pineapple always liked having the other pineapple as a friend, now he is gone. Pineapple loves reading books, and wanted to make his own book himself. Pineapple is now making a book about his life and in loving memory of his friend. Pineapple starting writing about his friend and how great of a friend he was. He also started writing about his life. <span id="bigtext">After a few days</span>, Pineapple finished his book. He published his book to the world. <span id="bigtext">Another few days later</span>, pineapple was watching the news. He saw his book on the news. Pineapple said: "Wow! My book is on the news?" The news now said: "I recommend this book to the public, come get it now in your local library." The news now shut off. Pineapple said: "Now my book is in libraries? Amazing!" Pineapple did more research on his book. He found out he is a best-selling author! "I did it! I did it friend!" Said pineapple. His friend looking up upon him, glad he was able to do it.
+</div>
+<div id="end">
+THE END
+</div>
+<script>
+  var h2;
+function redirect(h){
+  var a = document.createElement("a");
+  a.href = h;
+  a.click();
+}
+function set(ht){
+  h2 = ht;
+  redirect(h2);
+}
+</script>
+</body>
+</html>
