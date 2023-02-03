@@ -108,6 +108,10 @@ Chevy's Stories
       <img src="pap2.png" height="90">
       <div id="story4" class="storyname" style="display:none;">pineapple and pineapple <span style="color:red;">II</span></div>
       </button>
+      <button id="pap3" class="button" onclick="set('pap3.html')">
+        <img src="pap3.png" height="90">
+        <div id="story5" class="storyname" style="display:none;">pineapple and pineapple <span style="color:red;">III</span></div>
+        </button>
 </div>
 <div id="enjoy" class="stories" align="center" style="position:relative; bottom:-50px;">
   Enjoy my Stories!
@@ -137,6 +141,8 @@ Chevy's Stories
   const story3 = document.querySelector("#story3");
   const button4 = document.querySelector("#pap2");
   const story4 = document.querySelector("#story4");
+  const button5 = document.querySelector("#pap3");
+  const story5 = document.querySelector("#story5");
   const select = new Audio("hover.wav");
   var hovering = false;
   button1.addEventListener("mouseover", function(){
@@ -190,6 +196,19 @@ Chevy's Stories
     hovering = false;
     story4.style.animation = "fadeout 1s forwards";
     story4.style.display = "none";
+  });
+  button5.addEventListener("mouseover", function(){
+    story5.style.display = "block";
+    if(hovering == false){
+      select.play();
+      hovering = true;
+    }
+    story5.style.animation = "fadein 1s forwards";
+  });
+  button5.addEventListener("mouseout", function(){
+    hovering = false;
+    story5.style.animation = "fadeout 1s forwards";
+    story5.style.display = "none";
   });
 </script>
 </body>
