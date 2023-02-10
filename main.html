@@ -2,6 +2,7 @@
 <html>
 <head>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <title>Chevy's Stories</title>
 </head>
 <body>
   	<style>
@@ -112,6 +113,10 @@ Chevy's Stories
         <img src="pap3.png" height="90">
         <div id="story5" class="storyname" style="display:none;">pineapple and pineapple <span style="color:red;">III</span></div>
         </button>
+        <button id="waw2" class="button" onclick="set('wawII.html')">
+          <img src="wawII.png" height="90">
+          <div id="story6" class="storyname" style="display:none;">water and water <span style="color:red;">II</span></div>
+          </button>
 </div>
 <div id="enjoy" class="stories" align="center" style="position:relative; bottom:-50px;">
   Enjoy my Stories!
@@ -143,6 +148,8 @@ Chevy's Stories
   const story4 = document.querySelector("#story4");
   const button5 = document.querySelector("#pap3");
   const story5 = document.querySelector("#story5");
+  const button6 = document.querySelector("#waw2");
+  const story6 = document.querySelector("#story6");
   const select = new Audio("hover.wav");
   var hovering = false;
   button1.addEventListener("mouseover", function(){
@@ -209,6 +216,19 @@ Chevy's Stories
     hovering = false;
     story5.style.animation = "fadeout 1s forwards";
     story5.style.display = "none";
+  });
+  button6.addEventListener("mouseover", function(){
+    story6.style.display = "block";
+    if(hovering == false){
+      select.play();
+      hovering = true;
+    }
+    story6.style.animation = "fadein 1s forwards";
+  });
+  button6.addEventListener("mouseout", function(){
+    hovering = false;
+    story6.style.animation = "fadeout 1s forwards";
+    story6.style.display = "none";
   });
 </script>
 </body>
